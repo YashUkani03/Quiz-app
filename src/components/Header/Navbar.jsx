@@ -1,5 +1,6 @@
 import { Button } from '@mui/material'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
     return (
@@ -11,17 +12,16 @@ function Navbar() {
                             <ul className="flex flex-col gap-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
                                 <li className="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
                                     <Button style={{ display: 'flex', alignItems: 'center', color: 'white', borderColor: 'teal' }} variant='outlined'>
-                                        Home
+                                        <Link to='/'> 
+                                            Home
+                                        </Link>
                                     </Button>
                                 </li>
                                 <li className="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
                                     <Button style={{ display: 'flex', alignItems: 'center', color: 'white', borderColor: 'teal' }} variant='outlined'>
-                                        Quiz
-                                    </Button>
-                                </li>
-                                <li className="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
-                                    <Button style={{ display: 'flex', alignItems: 'center', color: 'white', borderColor: 'teal' }} variant='outlined'>
-                                        Results
+                                        <Link to='/result'>
+                                            Results
+                                        </Link>
                                     </Button>
                                 </li>
                             </ul>
