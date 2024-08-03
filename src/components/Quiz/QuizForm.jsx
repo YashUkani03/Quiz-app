@@ -12,6 +12,7 @@ export default function QuizForm() {
     const [selectedAnswer, setSelectedAnswer] = React.useState('');
     const [isCorrect, setIsCorrect] = React.useState(null);
     const [correctAnswers, setCorrectAnswers] = React.useState('')
+    const [incorrectAnswers, setIncorrectAnswers] = React.useState('')
     const navigate = useNavigate()
 
     const handleAnswerChange = (event) => {
@@ -25,6 +26,7 @@ export default function QuizForm() {
             setCorrectAnswers([...correctAnswers, currentQuestion]);
         } else {
             setIsCorrect(false);
+            setIncorrectAnswers([...incorrectAnswers, { question: currentQuestion, selectedAnswer }]);
         }
     };
 
@@ -42,7 +44,7 @@ export default function QuizForm() {
     };
 
     const onResultShow = () => {
-        navigate('/result', { state: { correctAnswers, totalQuestions: questions.length } })
+        navigate('/result', { state: { correctAnswers, incorrectAnswers, totalQuestions: questions.length } })
     }
 
     const previousQuestion = () => {

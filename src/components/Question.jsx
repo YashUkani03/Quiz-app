@@ -2,103 +2,103 @@ const questions = [
     {
         question: 'What is the capital of France?',
         options: [
-            { value: 'A', label: 'Berlin' },
-            { value: 'B', label: 'Paris' },
-            { value: 'C', label: 'Madrid' },
-            { value: 'D', label: 'Rome' }
+            { value: 'Berlin', label: 'Berlin' },
+            { value: 'Paris', label: 'Paris' },
+            { value: 'Madrid', label: 'Madrid' },
+            { value: 'Rome', label: 'Rome' }
         ],
-        correctAnswer: 'B'
+        correctAnswer: 'Paris'
     },
     {
         question: 'What is 2 + 2?',
         options: [
-            { value: 'A', label: '3' },
-            { value: 'B', label: '4' },
-            { value: 'C', label: '5' },
-            { value: 'D', label: '6' }
+            { value: '3', label: '3' },
+            { value: '4', label: '4' },
+            { value: '5', label: '5' },
+            { value: '6', label: '6' }
         ],
-        correctAnswer: 'B'
+        correctAnswer: '4'
     },
-    {
-        question: 'What is the only continent with land in all four hemispheres?',
-        options: [
-            { value: 'A', label: 'Africa' },
-            { value: 'B', label: 'Asia' },
-            { value: 'C', label: 'Europe' },
-            { value: 'D', label: 'Antractica' }
-        ],
-        correctAnswer: 'A'
-    },
-    {
-        question: 'Which river flows through the Grand Canyon?',
-        options: [
-            { value: 'A', label: 'Ganga River' },
-            { value: 'B', label: 'Colorado River' },
-            { value: 'C', label: 'Ravi River' },
-            { value: 'D', label: 'Tapi River' }
-        ],
-        correctAnswer: 'B'
-    },
-    {
-        question: 'In what year did the Great October Socialist Revolution take place?',
-        options: [
-            { value: "A", label: '1917' },
-            { value: "B", label: '1923' },
-            { value: "C", label: '1914' },
-            { value: "D", label: '1920' }
-        ],
-        correctAnswer: 'A'
-    },
-    {
-        question: 'What is the largest lake in the world ?',
-        options: [
-            { value: "A", label: 'Caspian Sea' },
-            { value: "B", label: 'Baikal' },
-            { value: "C", label: 'Lake Superior' },
-            { value: "D", label: 'Ontario' }
-        ],
-        correctAnswer: 'B'
-    },
-    {
-        question: 'Which planet in the solar system is known as the “Red Planet”?',
-        options: [
-            { value: "A", label: 'Venus' },
-            { value: "B", label: 'Earth' },
-            { value: "C", label: 'Mars' },
-            { value: "D", label: 'Jupiter' }
-        ],
-        correctAnswer: 'C'
-    },
-    {
-        question: 'What is the capital of Japan ?',
-        options: [
-            { value: "A", label: 'Beijing' },
-            { value: "B", label: 'Tokyo' },
-            { value: "C", label: 'Seoul' },
-            { value: "D", label: 'Bangkok' }
-        ],
-        correctAnswer: 'B'
-    },
-    {
-        question: 'Which river is the longest in the world ?',
-        options: [
-            { value: "A", label: 'Amazon' },
-            { value: "B", label: 'Mississippi' },
-            { value: "C", label: 'Nile' },
-            { value: "D", label: 'Yangtze' }
-        ],
-        correctAnswer: "C"
-    },
-    {
-        question: 'What gas is used to extinguish fires ?',
-        options: [
-            { value: "A", label: 'Oxygen' },
-            { value: "B", label: 'Nitrogen' },
-            { value: "C", label: 'Carbon dioxide' },
-            { value: "D", label: 'Hydrogen' }
-        ],
-        correctAnswer: "C"
-    },
+    // {
+    //     question: 'What is the only continent with land in all four hemispheres?',
+    //     options: [
+    //         { value: 'Africa', label: 'Africa' },
+    //         { value: 'Asia', label: 'Asia' },
+    //         { value: 'Europe', label: 'Europe' },
+    //         { value: 'Antractica', label: 'Antractica' }
+    //     ],
+    //     correctAnswer: 'Africa'
+    // },
+    // {
+    //     question: 'Which river flows through the Grand Canyon?',
+    //     options: [
+    //         { value: 'Ganga River', label: 'Ganga River' },
+    //         { value: 'Colorado River', label: 'Colorado River' },
+    //         { value: 'Ravi River', label: 'Ravi River' },
+    //         { value: 'Tapi River', label: 'Tapi River' }
+    //     ],
+    //     correctAnswer: 'Colorado River'
+    // },
+    // {
+    //     question: 'In what year did the Great October Socialist Revolution take place?',
+    //     options: [
+    //         { value: "1917", label: '1917' },
+    //         { value: "1923", label: '1923' },
+    //         { value: "1914", label: '1914' },
+    //         { value: "1920", label: '1920' }
+    //     ],
+    //     correctAnswer: '1917'
+    // },
+    // {
+    //     question: 'What is the largest lake in the world ?',
+    //     options: [
+    //         { value: "Caspian Sea", label: 'Caspian Sea' },
+    //         { value: "Baikal", label: 'Baikal' },
+    //         { value: "Lake Superior", label: 'Lake Superior' },
+    //         { value: "Ontario", label: 'Ontario' }
+    //     ],
+    //     correctAnswer: 'Baikal'
+    // },
+    // {
+    //     question: 'Which planet in the solar system is known as the “Red Planet”?',
+    //     options: [
+    //         { value: "Venus", label: 'Venus' },
+    //         { value: "Earth", label: 'Earth' },
+    //         { value: "Mars", label: 'Mars' },
+    //         { value: "Jupiter", label: 'Jupiter' }
+    //     ],
+    //     correctAnswer: 'Mars'
+    // },
+    // {
+    //     question: 'What is the capital of Japan ?',
+    //     options: [
+    //         { value: "Beijing", label: 'Beijing' },
+    //         { value: "Tokyo", label: 'Tokyo' },
+    //         { value: "Seoul", label: 'Seoul' },
+    //         { value: "Bangkok", label: 'Bangkok' }
+    //     ],
+    //     correctAnswer: 'B'
+    // },
+    // {
+    //     question: 'Which river is the longest in the world ?',
+    //     options: [
+    //         { value: "Amazon", label: 'Amazon' },
+    //         { value: "Mississippi", label: 'Mississippi' },
+    //         { value: "Nile", label: 'Nile' },
+    //         { value: "Yangtze", label: 'Yangtze' }
+    //     ],
+    //     correctAnswer: "Nile"
+    // },
+    // {
+    //     question: 'What gas is used to extinguish fires ?',
+    //     options: [
+    //         { value: "Oxygen", label: 'Oxygen' },
+    //         { value: "Nitrogen", label: 'Nitrogen' },
+    //         { value: "Carbon dioxide", label: 'Carbon dioxide' },
+    //         { value: "Hydrogen", label: 'Hydrogen' }
+    //     ],
+    //     correctAnswer: "Carbon dioxide"
+    // },
 
 ];
 

@@ -7,7 +7,8 @@ import { useLocation } from 'react-router-dom';
 function Result() {
 
     const location = useLocation()
-    const { correctAnswers, totalQuestions } = location.state
+    const { correctAnswers, totalQuestions, incorrectAnswers } = location.state
+
     return (
         <React.Fragment>
             <CssBaseline />
@@ -17,12 +18,24 @@ function Result() {
                         You have Scored {correctAnswers.length} out of {totalQuestions} Questions
                     </Typography>
                     {questions.map((question, index) => (
-                        <Box key={index} sx={{ marginLeft: 5, marginRight: 5, marginTop: 2, marginBottom: 2, padding: 2, border: '1px solid teal', borderRadius: '8px' }}>
-                            <Typography variant="h6" style={{ color: 'white', }} >
+                        <Box
+                            key={index}
+                            sx={{
+                                marginLeft: 5,
+                                marginRight: 5,
+                                marginTop: 2,
+                                marginBottom: 2,
+                                padding: 2,
+                                border: '1px solid teal',
+                                borderRadius: '8px'
+                            }}
+                        >
+                            <Typography variant="h6" style={{ color: 'white' }}>
                                 {question.question}
                             </Typography>
-                            <Typography variant="body1" style={{ color: 'white', marginTop: 1 }}>
-                                Correct Answer: {question.options.find(option => option.value === question.correctAnswer)?.label}
+                            <Typography variant="body1" style={{ color: 'white' }}>
+                                Your Answer: <br />
+                                Correct Answer: {question.correctAnswer}
                             </Typography>
                         </Box>
                     ))}
